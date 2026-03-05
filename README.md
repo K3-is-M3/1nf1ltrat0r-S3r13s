@@ -31,11 +31,7 @@
 
 ![Webcam_nmap1](https://i.ibb.co/BHzXsfhS/webcam-nmap1.png)
 
-
-![Webcam_nmap2](https://i.ibb.co/Kc5P6H2c/webcam-nmap2.png)
-
-
 ![Webcam_nmap3](https://i.ibb.co/6RFZf7vj/webcam-nmap3.png)
 
 
-![Webcam_nmap4](https://i.ibb.co/ksH1mhng/webcam-nmap4.png)
+
