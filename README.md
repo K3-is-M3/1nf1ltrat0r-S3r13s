@@ -52,6 +52,30 @@ To avoid manually testing the 100+ discovered paths, I prioritized the most like
 ### Proof of Concept (PoC)
 I used **ffplay**, a command-line media player included in the FFmpeg suite on Kali Linux, to test the streams directly from the terminal. 
 
+Out of curiosity, I also tested the common industry paths discovered on the nmap rstp-url-brute scan using the ffplay tool and fortunately, **I caught streams using all paths**. 
+
 **Execution Command:**
 ```bash
 ffplay rtsp://192.168.0.134/onvif-media/media.amp
+```
+![Onvif_terminal](https://i.ibb.co/YTLWpvms/onvif-terminal.png)
+![Onvif_stream](https://i.ibb.co/rR6trjpc/onvif.png)
+
+```bash
+rtsp://192.168.0.134/Streaming/Channels/101
+```
+![Hikvision_terminal](https://i.ibb.co/5xfRF68W/hikvision-standard-terminal.png)
+![Hikvision_stream](https://i.ibb.co/XZ65jJFr/hikvision-standard.png)
+
+```bash
+rtsp://192.168.0.134/cam/realmonitor?channel=1&subtype=0
+```
+![Dahua_terminal](https://i.ibb.co/1tNGZWnV/dahua-standard-terminal.png)
+![Dahua_stream](https://i.ibb.co/SXcjVZr9/dahua-standard-stream.png)
+
+```bash
+rtsp://192.168.0.134/axis-media/media.amp
+```
+![Axis_terminal](https://i.ibb.co/qMwp1YDp/axis-terminal.png)
+![Axis_stream](https://i.ibb.co/DHRySjYc/axis-stream.png)
+
