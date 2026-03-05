@@ -23,6 +23,16 @@
 ## Discovery
 <p>The first step will be discovery, and since I have quite a number of personal devices on my network that I do not need to expose, we will solely focus on the webcam.</p> 
 <p>We will use nmap for network discovery.</p>
+
 ![Network Discovery](https://i.ibb.co/5gkFrgmN/network-nmap.png)
 
 <p>Boom. We found it. Next we will narrow down to the specific host and enumerate it further. I searched through nmap scripts to see if there are any rtsp-related scripts. Fortunately, i found two. We will use the first one.</p>
+<b>Here I landed on a goldmine of results, so it is split across a number of screenshots.</b>
+
+![Webcam_nmap1](https://i.ibb.co/BHzXsfhS/webcam-nmap1.png)
+
+![Webcam_nmap2](https://i.ibb.co/Kc5P6H2c/webcam-nmap2.png)
+
+![Webcam_nmap3](https://i.ibb.co/6RFZf7vj/webcam-nmap3.png)
+
+![Webcam_nmap4](https://i.ibb.co/ksH1mhng/webcam-nmap4.png)
