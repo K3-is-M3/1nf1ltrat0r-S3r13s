@@ -8,6 +8,7 @@
 
 ### Smart WiFi Webcam
 * **Category:** IoT / Surveillance
+* **Write-up:** [View Full Report](./Webcam_Pentesting.md)
 
 ### Android TV
 * **Category:** Entertainment / Media
