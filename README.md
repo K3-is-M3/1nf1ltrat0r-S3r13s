@@ -34,5 +34,24 @@
 ![Webcam_nmap3](https://i.ibb.co/6RFZf7vj/webcam-nmap3.png)
 ![Webcam_nmap4](https://i.ibb.co/ksH1mhng/webcam-nmap4.png)
 
+## Exploitation
+
+### Vulnerability Analysis
+The initial Nmap scan revealed that the RTSP service on the target device is misconfigured. Every request sent to the service returned a **200 OK** response. This indicates a **complete lack of authentication**; a secured device would have responded with a **401 Unauthorized** to prompt for credentials before granting access to the media stream.
 
 
+
+### Path Discovery and Selection
+To avoid manually testing the 100+ discovered paths, I prioritized the most likely candidates based on common industry standards:
+
+* **ONVIF Standard:** `rtsp://192.168.0.134/onvif-media/media.amp`
+* **Hikvision Style:** `rtsp://192.168.0.134/Streaming/Channels/101`
+* **Dahua Style:** `rtsp://192.168.0.134/cam/realmonitor?channel=1&subtype=0`
+* **Axis Style:** `rtsp://192.168.0.134/axis-media/media.amp`
+
+### Proof of Concept (PoC)
+I used **ffplay**, a command-line media player included in the FFmpeg suite on Kali Linux, to test the streams directly from the terminal. 
+
+**Execution Command:**
+```bash
+ffplay rtsp://192.168.0.134/onvif-media/media.amp
